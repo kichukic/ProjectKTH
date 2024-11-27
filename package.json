@@ -1,0 +1,23 @@
+{
+  "name": "projectkth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "KishorTH",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "child_process": "^1.0.2",
+    "commander": "^12.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "bin": {
+    "KTH": "./main.mjs"
+  }
+}
