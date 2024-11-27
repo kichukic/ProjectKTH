@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename)
 const pro ={}
 
 export const startProcess =(file)=>{
-    const logfile = path.join(__dirname, `${path.basename(file).log}`)
+    const logfile = path.join(__dirname, `${path.basename(file)}.log`)
     const out = fs.openSync(logfile,"a")
     const err =fs.openSync(logfile,"a")
 const process =spawn("node",[file],{
@@ -29,7 +29,7 @@ try {
     if(pro[pid]){
         process.kill(pid)
         console.log(`process with ${pid} has been killed . . `);
-        delete process[pid]
+        delete pro[pid]
     }else{
         console.log(`failed to stop process with pid ${pid}`);
     }
